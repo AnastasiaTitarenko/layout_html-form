@@ -16,10 +16,11 @@
     action="https://mate-academy-form-lesson.herokuapp.com/create-applicatio"
     method="POST"
     onsubmit="onSubmit()"
+    class="form"
     >
       <fieldset class="block-form">
         <legend>Personal information</legend>
-        <label for="sname" class="field-form">Surname:
+        <label for="sname" class="first-input">Surname:
           <input
           type="text" id="sname"
           name="sname" autocomplete="off"
@@ -35,7 +36,7 @@
           <input
           type="number" name="age"
           id="age" value="12"
-          max="100"
+          max="100" size="5"
           >
         </label>
         <label for="birthday" class="field-form">Full date of birth:
@@ -53,7 +54,7 @@
       </fieldset>
       <fieldset class="block-form">
         <legend>Registration</legend>
-        <label for="mail" class="field-form">E-mail:
+        <label for="mail" class="reg-first-input">E-mail:
           <input
           type="email" id="mail"
           name="mail" placeholder="email@example.com"
@@ -70,7 +71,7 @@
       </fieldset>
       <fieldset class="block-form">
         <legend>An interesting fact about you!</legend>
-        <label for="cats" class="field-form">Do you love cats?
+        <label for="cats" class="first-input">Do you love cats?
           <input
           type="checkbox" id="cats"
           name="cats" value="yes"
@@ -95,7 +96,7 @@
         <label for="cars" class="field-form">What are your favorite brand of cars?
           <select
           name="cars" id="cars"
-          size="3" multiple
+          size="4" multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -112,11 +113,11 @@
       </fieldset>
       <fieldset class="block-form">
         <legend>Additional info:</legend>
-        <label for="comments" class="field-form">Comments:
+        <label for="comments" class="first-input">Comments:
           <textarea
           name="comments"
           id="comments"
-          cols="20" rows="4"
+          cols="20" rows="2"
           >
           </textarea>
         </label>

@@ -1,9 +1,33 @@
 /* styles go here */
+body {
+  box-sizing: border-box;
+}
+
+.first-input {
+  display: block;
+  padding-top: 6px;
+}
+
+.reg-first-input {
+  display: block;
+  padding-top: 5px;
+}
+
 .field-form {
   display: block;
   margin: 10px 0;
 }
 
-.block-form {
-  margin: 20px 0;
+.block-form:not(:first-child) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 12px;
+}
+
+.block-form:first-child {
+  padding: 0 12px;
+}
+
+#age {
+  width: 36px;
 }
