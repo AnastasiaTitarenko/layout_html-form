@@ -86,22 +86,22 @@
       </fieldset>
       <fieldset class="block-form">
         <legend>An interesting fact about you!</legend>
-        <label for="cats" class="first-input">Do you love cats?
+        <div class="first-input">Do you love cats?
           <input
-            type="checkbox"
+            type="radio"
             id="cats"
             name="cats"
             value="yes"
           >
-            Yes
+          <label for="cats">Yes</label>
           <input
-            type="checkbox"
+            type="radio"
             id="cats1"
             name="cats"
             value="no"
           >
-            No
-        </label>
+          <label for="cats1">No</label>
+        </div>
         <label for="color" class="field-form">What is your favorite color?
           <input
             type="color"
